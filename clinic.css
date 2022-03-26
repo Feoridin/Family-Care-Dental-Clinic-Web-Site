@@ -13,6 +13,8 @@ header{
 }
 h1{
   height: 0px;/*makes the address and title near each other*/
+  font-family: Helvetica, Sans-Serif;
+  color:rgb(54, 54, 106)
 }
 .address{
     display: flex;
