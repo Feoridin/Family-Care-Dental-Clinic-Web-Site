@@ -3,11 +3,20 @@
 header{
     display: flex;
     height: 200px;
-}
+    justify-content: space-between;
+    }
 .title{
     display: flex;
-    justify-content: center;
-    margin: 30px auto
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto;
+}
+h1{
+  height: 0px;
+}
+.address{
+    display: flex;
+    margin: 10px auto;
 }
 .logo2{
     display: flex;
