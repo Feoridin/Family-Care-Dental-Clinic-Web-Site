@@ -12,11 +12,12 @@ header{
     margin: 30px auto;
 }
 h1{
-  height: 0px;
+  height: 0px;/*makes the address and title near each other*/
 }
 .address{
     display: flex;
     margin: 10px auto;
+
 }
 .logo2{
     display: flex;
@@ -28,9 +29,7 @@ h1{
     position: relative;
     background-color: rgb(190, 188, 188);
     display: flex;
-    justify-content: center;
-    align-items: space-around;
-        
+    justify-content: center;          
   }
   
   .nav1{
