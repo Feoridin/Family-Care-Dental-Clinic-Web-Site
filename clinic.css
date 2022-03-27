@@ -4,12 +4,16 @@ header{
     display: flex;
     height: 200px;
     justify-content: space-between;
+    margin: 5px;
      }
+.logo{
+  margin: 0px;
+}
 .title{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 30px auto;
+    margin: 10px auto;
 }
 h1{
   height: 0px;/*makes the address and title near each other*/
@@ -24,6 +28,10 @@ h1{
 .logo2{
     display: flex;
     margin: 38px;
+}
+hr{
+  border-top: 10px solid rgb(204, 234, 73);
+  margin: 0px;
 } 
   nav{
     position: relative;
@@ -43,49 +51,54 @@ h1{
     background-color: rgb(204, 234, 73);
     color: black;
   }
-    /*alignment of main*/
-  main{
-    width: 820px;
-    margin: 0 auto;
+  .container1{
+    display: flex;
+    background-color:rgb(105, 207, 249);
+    justify-content: center;
+    margin: 0px;
   }
-  /*assign color to Image description*/
-  .emphasis{background-color: gray;}
+  .button1{
+    display: flex;
+    background:rgb(54, 54, 106);
+    color:rgb(204, 234, 73);
+    margin: 20px;
+    padding: 0px 30px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px 2px rgb(192, 192, 192);
+  }
   
-  .Box {
+  .back{
+    display: flex;
+    justify-content: center;
+    opacity: .2;
+    position:relative;   
+  }
+  .main{
+    display:flex;
+    flex-direction: column;
+    background-color: rgb(105, 207, 249);
+ }
+ .main1{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+ }
+ .main2{
   display: flex;
-  margin: 10px;
-  gap: 20px;
-  
-  }
-  /*Assign Border to Image2*/
-  .Image2 {
-    box-sizing: border-box;
-    width: 50%;
-    border: 2px solid rgb(68, 233, 156);
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+div.main a:hover {
+  background-color: #777;
+  transform: scale(1.1); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
     
-  }
-  
-  .foot1{
-    color: black;
-    display: flex;
-    align-items: flex-end;
-    padding: 50px 10px 0px;
-  
-  }
-  footer {
-    position: relative;
-    background-color: rgb(4, 4, 83);
-    overflow: hidden;
-    display: flex;
-    justify-content:left;
-    color: white;
-    margin: 50px;
-    padding: 10px 0px;
-    }
-  .footer1 {
-    margin: 0px 490px;
-  }
   
     
+
   
   
