@@ -59,6 +59,7 @@ hr{
     background-color:rgb(105, 207, 249);
     justify-content: center;
     margin: 0px;
+    
   }
   .button1{
     display: flex;
@@ -70,6 +71,7 @@ hr{
     text-align: center;
     border-radius: 50px;
     box-shadow: 5px 5px 10px 2px rgb(192, 192, 192);
+    
   }
   
   .back{
@@ -82,8 +84,8 @@ hr{
     display:flex;
     flex-direction: column;
     background-color: rgb(105, 207, 249);
-    background-image: url(Images/LOGOTEETH.png);
-    background-size:  100px;
+    background-image: url(Images/LOGOTEETH.png);/*background image*/
+    background-size:  200px;
     
  }
  .main1{
@@ -107,11 +109,7 @@ div.main a:hover {
   background-color: #777;
   transform: scale(1.2); /* (120% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
-.bottomcontainer{
-  display: flex;
-  background-color:rgb(105, 207, 249);
-  background-image: url(Images/DAPITANCLINICMAP.png);
-}
+
 
 
 
