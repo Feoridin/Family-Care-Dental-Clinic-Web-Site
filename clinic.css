@@ -4,7 +4,7 @@ body {
     "header nav"
     "article nav"
     "footer nav";
-  grid-template-rows: 80px 120px 1fr 70px;  
+  grid-template-rows: 10% 80% 1fr;  
   grid-template-columns: 1fr 20%;
   grid-row-gap: 10px;
   grid-column-gap: 10px;
@@ -42,8 +42,8 @@ header{
 }
 
 article{
-  padding: 0;
-  margin-top: 1.5rem;
+  
+  overflow: scroll;
 }
 .title{
     margin-top: 2rem;
@@ -66,4 +66,11 @@ article{
  .title{
   margin-top: 1rem;
  }
+ article{
+  overflow: scroll;
+ }
+ body{
+  grid-template-rows: 10% 10% 1fr 10%;
+ }
 }
+  
