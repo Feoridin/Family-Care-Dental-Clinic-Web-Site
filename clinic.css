@@ -1,122 +1,41 @@
-
-
-header{
-    display: flex;
-    height: 200px;
-    justify-content: space-between;
-    margin: 0px 10% 0px 10%;
-    padding-bottom:2%;
-     }
-
-.logo{
-  margin: 0px;
-}
-.title{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px auto;
-}
-h1{
-  height: 0px;/*makes the address and title near each other*/
-  font-family: Helvetica, Sans-Serif;
-  color:rgb(54, 54, 106)
-}
-.address{
-    display: flex;
-    margin: 10px auto;
-
-}
-.logo2{
-    display: flex;
-    margin: 38px;
-}
-hr{
-  border-top: 10px solid rgb(204, 234, 73);
-  margin: 0px;
-} 
-  nav{
-    position: relative;
-    background-color: rgb(105, 207, 249); /* Add a black background color to the top navigation */
-    display: flex;
-    justify-content: space-evenly;  
-    margin: 0px auto;        
+body { 
+  display: grid;
+  grid-template-areas: 
+    "header header"
+    "nav article"
+    "nav footer";
+  grid-template-rows: 80px 120px 1fr 70px;  
+  grid-template-columns: 20% 1fr;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 100vh;
+  margin: 0;
+  }  
+header, footer, article, nav, div {
+  padding: 1.2em;
+  background: #69cff9;
   }
-    /* Style the links inside the navigation bar */
-  .navigation {
-    padding: 10px 20px;
-    font-size: 17px;
-    width: 120px;
-    text-align: center;    
+#pageHeader {
+  grid-area: header;
   }
-   /* Change the color of links on hover */
-  .navigation:hover {
-    background-color: rgb(204, 234, 73);
-    color: black;
+#pageFooter {
+  grid-area: footer;
   }
-  .container1{
-    display: flex;
-    background-color:rgb(105, 207, 249);
-    justify-content: center;
-    margin: 0px;
-    
+#mainArticle { 
+  grid-area: article;      
   }
-  .button1{
-    display: flex;
-    background:rgb(54, 54, 106);
-    color:rgb(204, 234, 73);
-    margin: 20px;
-    padding: 0px 30px;
-    justify-content: center;
-    text-align: center;
-    border-radius: 50px;
-    box-shadow: 5px 5px 10px 2px rgb(192, 192, 192);
-    
+#mainNav { 
+  grid-area: nav; 
   }
-  
-  .back{
-    display: flex;
-    justify-content: center;
-    opacity: .2;
-    position:relative;   
-  }
-  .main{
-    display:flex;
-    flex-direction: column;
-    background-color: rgb(105, 207, 249);
-    background-image: url(Images/LOGOTEETH.png);/*background image*/
-    background-size:  200px;
-    
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 575px) {
+  body { 
+    grid-template-areas: 
+      "header"
+      "article"
+      "nav"
+      "footer";
+    grid-template-rows: 80px 1fr 70px 1fr 70px;  
+    grid-template-columns: 1fr;
  }
- .main1{
-   display: flex;
-   flex-direction: row;
-   justify-content: space-evenly;
-   margin: 0px 50px;
- }
- .main2{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
 }
-div.main a {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px;
-}
-div.main a:hover {
-  background-color: #777;
-  transform: scale(1.2); /* (120% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-
-
-
-
-
-    
-  
-    
-
-  
-  
